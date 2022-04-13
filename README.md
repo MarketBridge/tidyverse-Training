@@ -13,3 +13,11 @@ Once you're able to connect to the Azure VPN and log into the Windows entry poin
 Use the command line to log in for the first time to the EMBER server. To achieve this, open the application Git Bash and enter the command `ssh ember`. You'll be prompted for your password, which is the Azure password you used for the remote desktop connection. If you entered your password correctly, you should see a new prompt for `<user>@ember:~$`. At this point you can type `exit`, hit enter, then type `exit` again and hit enter (effectively closing Git Bash). Note that this step is really only required the very first time you log in.
 
 The step above automatically created your home folder on the EMBER server. Now you can log into RStudio. To do so, open Chrome and for the URL enter `ember:8787`. You'll be prompted for credentials, and again, this is your Azure credentials that you used to get into the remote desktop. If all goes well, you should land in the RStudio environment.
+
+After visiting RStudio, type the following into the R Console:
+
+```
+install.packages(c("babynames", "formatR", "gapminder", "hexbin", "mgcv", "maps", "mapproj","nycflights13", "tidyverse", "viridis", "plotly"))
+```
+
+Please also bring your power cord to the training!
