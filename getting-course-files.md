@@ -5,7 +5,7 @@
   3. Enter the command `ssh ember`
   4. Note your prompt on the ember server. Mine is `alamstein@ember:~$`. This means that my username is `alamstein`. It also means that my home directory is `alamstein`. You will need to know this for the next step.
   5. Type the following command and then hit enter: `/home/alamstein/copy_files.sh`. You should get the prompt: "Enter directory to copy training scripts to: ". Enter your username from the above step and hit enter. You should just get another default prompt. I.e., it should look like nothing happened.
-  6. Type the following command and then hit enter: `ls`
+  6. Type the following command and then hit enter: `ls`. This command will list the files in your home directory.
 
 You should see (at least) the following files in your directory:
 1. `00-Introduction.Rmd`
