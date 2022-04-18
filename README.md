@@ -24,4 +24,4 @@ Please also bring your power cord to the training!
 
 ---
 
-After doing the above, please [get the required files](https://github.com/MarketBridge/tidyverse-Training).
+After doing the above, please [get the required files](https://github.com/MarketBridge/tidyverse-Training/blob/main/getting-course-files.md).
