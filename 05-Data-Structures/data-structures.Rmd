@@ -1,0 +1,119 @@
+---
+title: "Data Structures"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Your Turn #1
+# (Variables & Assignment)
+
+Guess what this code will do, and then run it.
+
+Also: Take a look at the "Environment" tab, both before and after running the code.
+Also: Note that we are using both = and <- for assignment. Is there a difference?
+
+```{r}
+stock_price = 100
+print(stock_price)
+
+stock_price <- 99
+print(stock_price)
+```
+
+# Your Turn #2
+# (Create a Vector)
+
+Create a vector that contains 3 numbers:
+1. The year you were born
+2. The year you graduated high school
+3. The year you started working at MarketBridge
+
+Store the values in a variable named "years". Then print it out.
+```{r}
+
+```
+
+# Your Turn #3
+# (Create a Named Vector)
+
+Create a vector called `years_named` that contains the exact same data as `years`. But each element should have a name that describes what happened that year. Then print out the vector.
+
+# Example
+# stock_price_history = c(
+#   "Jan" = 98,
+#   "Feb" = 99,
+#   "Mar" = 100)
+# print(stock_price_history)
+```{r}
+```
+
+# Your Turn #4
+# (Vector Indexing)
+
+You are given a vector `words` that form the sentence "Your name is Ari".
+
+1. Using indexing, change the last word to be your name, not mine. 
+2. Create a new vector, `words_question`, that forms the sentence "is Your name Ari". Use indexing to access each individual word of the original vector.
+
+```{r}
+words = c("Your", "name", "is", "Ari")
+words[ <index> ] = "<your name>"
+print(words)
+
+words_question = c(words[3], ...)
+print(words_question)
+```
+
+# Your Turn #5
+# (Vectorized Operations)
+
+Create a vector called `years` that contains 3 numbers: 
+1. The year you were born
+2. The year you graduated high school
+3. The year you started working at MarketBridge
+
+Then create a new vector, `ages`, that contains the age you were at each of these events. Create `ages` by performing a vectorized operation on `years`.
+
+```{r}
+
+years = c(1978, 1996, 2021)
+ages  = ...
+
+```
+
+# Your Turn #6
+# (Creating a Data Frame)
+
+Create two vectors: `events` and `years`:
+1. `events` should contains the words "born", "hs", "mb"
+2. `years` should contain the years you were born, graduated high school and joined market bridge.
+
+Then print the result.
+
+# Syntax reminder:
+# df = data.frame(col1 = c("a", "b", "c"), col2 = c(1, 2, 3))
+
+```{r}
+
+```
+
+# Your Turn #7
+# (Manipulating Data Frame Columns)
+
+I have given you a data frame which contains events and the years in which they occurred. 
+
+1. Modify the dataframe to have the correct years in which these events happened to you.
+2. Create a new column called "age" which contains the age in which these events happened to you. Age should be created via a vectorized operation on the "year" column
+3. Delete the "year" column
+4. print the result
+
+```{r}
+events = c("born", "hs", "mb")
+years  = c(1978, 1996, 2021)
+
+df = data.frame(event = events, 
+                year  = years)
+
+
+```
