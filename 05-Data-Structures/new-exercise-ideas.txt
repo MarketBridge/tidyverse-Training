@@ -1,0 +1,42 @@
+These are some thoughts I jotted down after teaching this lesson for the first time. They are primarily ideas for new exercises or modifications 
+to existing exercises based on how students responded.
+
+-First exercise: Change to use the variable on both the LHS and RHS of the equation. e.g.
+stock_price = 99
+print(stock_price)
+
+stock_price <- stock_price + 1
+print(stock_price).
+
+People were sometimes confused to see a variable on both the LHS and RHS of the equation, so get that out of the way early on.
+
+-New Exercise: swap two elements of a vector. This is a very common intro to programming exercise, because you need multiple steps to accomplish it. Give them tmp to start (you need a third variable). E.g.
+
+x=c(1, 2, 3)
+print(x)
+
+# swap elements at index 1 and 3
+tmp = x[1]
+x[1] = ___
+x[3] = ___
+print(x)
+
+-Reinforce syntax of x[index]. Some people wrote [index] without the x, which surprised me. Perhaps have a slide reinforcing that:
+x=foo
+x = c(1,2,3)
+x[idx] = foo
+df = data.frame(1:3, c('a', 'b', 'c'))
+df$col = foo 
+are all forms of assignment. People sometimes got tripped up in ways I didn't expect, perhaps reinforcing that these are all just variations on a theme a few times will help.
+
+-x[c(1,4)]
+-people asked about this (selecting multiple elements). I also originally debated including it in the slides. So might as well include it next time.
+-Say: "Anywhere you can use a single value, you can use a vector with multiple values"
+
+-Vectorization exercises:
+-I covered c(1,2,3) + 100
+-Demonstrate sum(1,2,3) vs. x=c(1,2,3); sum(x). Tie back to previous point: "Anywhere you can use a single value, you can use a vector with multiple values"
+
+Two important details (don't need exercises, but people asked / it is in the cheat sheet):
+-Adding an element to a vector. Syntax is important: x = c(x, 1). x is on both sides of equal sign. This ties back to first point.
+-: notation e.g. 1:5. This is also on cheat sheet.
