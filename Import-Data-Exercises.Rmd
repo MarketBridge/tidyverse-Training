@@ -80,7 +80,7 @@ nimbus %>%
 
 ## readxl
 
-Use the read_excel file from the readxl package to read in the file "who.xls".
+Use the read_excel function from the readxl package to read in the file "who.xls".
 
 Use the "range" parameter to read in the second, smaller table.
 
