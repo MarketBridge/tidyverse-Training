@@ -1,5 +1,5 @@
 ---
-title: "Data Types"
+title: "Non Numeric Data"
 output: html_notebook
 ---
 
@@ -8,9 +8,7 @@ library(tidyverse)
 library(babynames)
 library(nycflights13)
 library(stringr)
-library(forcats)
 library(lubridate)
-library(hms)
 ```
 
 ## Your Turn 1
@@ -117,7 +115,5 @@ Dplyr gives you three _general_ functions for manipulating data: `mutate()`, `su
 Package   | Data Type
 --------- | --------
 stringr   | strings
-forcats   | factors
-hms       | times
 lubridate | dates and times
 
