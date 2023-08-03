@@ -1,4 +1,4 @@
-library(ggplot2)
+library(tidyverse)
 library(babynames)
 
 babynames %>% 
@@ -7,11 +7,8 @@ babynames %>%
   geom_line() +
   ggtitle("Babies Named Ari")
 
-
 # -------------
 
-library(ggplot2)
-library(babynames)
 library(glue)
 
 baby_name_graph = function(baby_name) {
@@ -24,7 +21,6 @@ baby_name_graph = function(baby_name) {
 
 baby_name_graph("Alex")
 
-
 # ------------
 
 # Don't try this at home
@@ -36,5 +32,3 @@ for (one_name in all_names) {
 library(myPackage)
 
 baby_name_graph("Andy")
-
-
