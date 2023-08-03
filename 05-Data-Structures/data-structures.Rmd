@@ -25,8 +25,8 @@ print(stock_price)
 # (Create a Vector)
 
 Create a vector that contains 3 numbers:
-1. The year you were born
-2. The year you graduated high school
+1. The year Christopher Columbus sailed the ocean blue
+2. The year America became an independent country
 3. The year you started working at MarketBridge
 
 Store the values in a variable named "years". Then print it out.
@@ -69,16 +69,16 @@ print(words_question)
 # (Vectorized Operations)
 
 Create a vector called `years` that contains 3 numbers: 
-1. The year you were born
-2. The year you graduated high school
+1. The year Christopher Columbus sailed the ocean blue
+2. The year America became an independent country
 3. The year you started working at MarketBridge
 
-Then create a new vector, `ages`, that contains the age you were at each of these events. Create `ages` by performing a vectorized operation on `years`.
+Then create a new vector, `years_since`, that contains the years since the first event that each event happened. Create `years_since` by performing a vectorized operation on `years`.
 
 ```{r}
 
-years = c(1978, 1996, 2021)
-ages  = ...
+years        = c(1492, 1776, 2021)
+years_since  = ...
 
 ```
 
@@ -86,8 +86,10 @@ ages  = ...
 # (Creating a Data Frame)
 
 Create two vectors: `events` and `years`:
-1. `events` should contains the words "born", "hs", "mb"
-2. `years` should contain the years you were born, graduated high school and joined market bridge.
+1. `events` should contains the words "columbus", "usa", "mb"
+2. `years` should contain the years Columbus sailed the ocean blue, the year the US became independent and the year you joined market bridge.
+
+Then create a data frame with those vectors as columns.
 
 Then print the result.
 
@@ -102,18 +104,16 @@ Then print the result.
 # (Manipulating Data Frame Columns)
 
 I have given you a data frame which contains events and the years in which they occurred. 
-
-1. Modify the dataframe to have the correct years in which these events happened to you.
-2. Create a new column called "age" which contains the age in which these events happened to you. Age should be created via a vectorized operation on the "year" column
+1. Modify the dataframe to have the correct years for these events.
+2. Create a new column called "years_since" which contains the years since 1492 in which these happened. years_since should be created via a vectorized operation on the "year" column
 3. Delete the "year" column
 4. print the result
 
 ```{r}
-events = c("born", "hs", "mb")
-years  = c(1978, 1996, 2021)
+events = c("columbus", "usa", "mb")
+years  = c(1492, 1776, 2021)
 
 df = data.frame(event = events, 
                 year  = years)
-
 
 ```

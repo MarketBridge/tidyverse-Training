@@ -1,0 +1,15 @@
+People also need to learn how to create functions and use conditionals. Some example exercises I used recently in a mentoring session:
+
+Write a function that greets you by name:
+  -Start with something hard-coded: print(“Hi Bob”)
+  -Modify to take the name as an argument
+  -Add a default parameter
+
+If statements:
+  -%% operator
+  -Function to print if a number is even or odd
+
+Back to the “Hi Bob” function:
+  -Take a second parameter “time_of_day”
+  -If “morning” print “Good morning <name>”, etc.
+  -?stop if time_of_day is not valid
